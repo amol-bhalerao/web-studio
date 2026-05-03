@@ -20,3 +20,22 @@ api/public/uploads/*
 # Admission / second database (not part of Web Studio core)
 database/admission_schema.sql
 database/docker-init/
+
+# Logs & tooling (merged with GitHub default template)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+coverage/
+*.lcov
+.nyc_output
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+.npm
+.node_repl_history
+.cache/
+.parcel-cache
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
