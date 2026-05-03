@@ -1,0 +1,9 @@
+# Slim PHP front controller (Apache + mod_rewrite).
+# Upload this file next to index.php (e.g. public_html/api/.htaccess on Hostinger).
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.php [QSA,L]
+</IfModule>

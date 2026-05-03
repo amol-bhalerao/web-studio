@@ -1,0 +1,22 @@
+node_modules/
+dist/
+vendor/
+api/.env
+**/.env
+!**/.env.example
+!**/.env.production.example
+api/public/uploads/*
+!api/public/uploads/.gitkeep
+.DS_Store
+*.log
+.idea/
+.vscode/
+
+# Optional suites kept outside this upstream (local monorepo checkouts)
+/admission-api/
+/mfe-college-admin/
+/mfe-shell/
+
+# Admission / second database (not part of Web Studio core)
+database/admission_schema.sql
+database/docker-init/
